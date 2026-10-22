@@ -1,0 +1,27 @@
+{
+  "name": "therapy-scheduler-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "API for the therapy scheduler: appointments, online booking, reminders and two-way Google Calendar sync.",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "luxon": "^3.5.0",
+    "mysql2": "^3.11.5",
+    "nodemailer": "^6.9.16",
+    "twilio": "^5.4.0"
+  }
+}
